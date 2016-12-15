@@ -2,7 +2,7 @@
 This appliaction demonstrates how to use the Zentri BLE iOS Framework
 
 # Installation
-To install the Framework in your own applications drag the file "BLECommander.Framework" from this Xcode project to yours ensuing that you select "Copy if needed"
+To install the Framework in your own applications, drag the file "BLECommander.Framework" from this Xcode project to yours ensuring that you select "Copy if needed"
 
 # Usage
 This demo app uses the Framework to handle the communications to Zentri BLE devices. The Framework returns data to the calling code via delegate call back methods that are triggered when events occur within the Framework.
