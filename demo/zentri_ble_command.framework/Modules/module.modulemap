@@ -1,0 +1,6 @@
+framework module zentri_ble_command {
+  umbrella header "zentri_ble_command.h"
+
+  export *
+  module * { export * }
+}

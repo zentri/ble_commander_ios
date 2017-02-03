@@ -18,10 +18,9 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#define BLECOMMANDER_IOS_LIB_VERSION "0.4.0"
-
 #import <Foundation/Foundation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
+#import <UIKit/UIKit.h>
 
 //Commands
 #define TC_COM_ADC                          @"adc"
@@ -124,6 +123,15 @@ typedef struct
     UInt8 code;
     UInt32 length;
 } Header;
+
+//! Project version number for zentri_ble_command.
+FOUNDATION_EXPORT double zentri_ble_commandVersionNumber = 1;
+
+//! Project version string for zentri_ble_command.
+FOUNDATION_EXPORT const unsigned char zentri_ble_commandVersionString[] = "1.0.0.0";
+
+// In this header, you should import all the public headers of your framework using statements like #import <zentri_ble_command/PublicHeader.h>
+
 
 @protocol BLECommanderDelegate <NSObject>
 @required

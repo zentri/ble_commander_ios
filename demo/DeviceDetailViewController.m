@@ -34,7 +34,7 @@
 #import "StreamLineEndingViewController.h"
 #import "TimedOutViewController.h"
 #import "UIViewController+ENPopUp.h"
-#import "BLECommanderiOS/BLECommanderiOS.h"
+#import "zentri_ble_command/zentri_ble_command.h"
 
 #define kStreamMode 0
 #define kCommandMode 1

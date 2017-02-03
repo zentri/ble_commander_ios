@@ -34,7 +34,8 @@
 		806BD73C1AE51A7B0017BC15 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 806BD73B1AE51A7B0017BC15 /* Images.xcassets */; };
 		806BD73F1AE51A7B0017BC15 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 806BD73D1AE51A7B0017BC15 /* LaunchScreen.xib */; };
 		806BD74B1AE51A7B0017BC15 /* demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 806BD74A1AE51A7B0017BC15 /* demoTests.m */; };
-		FF0C548A1C07FFB2002B8613 /* BLECommanderiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0C54891C07FFB2002B8613 /* BLECommanderiOS.framework */; };
+		F4EFC7CE1E43FC7E00D19263 /* zentri_ble_command.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4EFC7CD1E43FC7E00D19263 /* zentri_ble_command.framework */; };
+		F4EFC7CF1E43FC7E00D19263 /* zentri_ble_command.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4EFC7CD1E43FC7E00D19263 /* zentri_ble_command.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,20 @@
 			remoteInfo = demo;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F4EFC7D01E43FC7E00D19263 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F4EFC7CF1E43FC7E00D19263 /* zentri_ble_command.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5416F8861B437E8200EC7B17 /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
@@ -77,6 +92,7 @@
 		806BD7441AE51A7B0017BC15 /* BLE Commander.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BLE Commander.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		806BD7491AE51A7B0017BC15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		806BD74A1AE51A7B0017BC15 /* demoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = demoTests.m; sourceTree = "<group>"; };
+		F4EFC7CD1E43FC7E00D19263 /* zentri_ble_command.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = zentri_ble_command.framework; path = demo/zentri_ble_command.framework; sourceTree = "<group>"; };
 		FF0C54891C07FFB2002B8613 /* BLECommanderiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BLECommanderiOS.framework; sourceTree = "<group>"; };
 		FF0F57201C056E1B008FAE5D /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,7 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF0C548A1C07FFB2002B8613 /* BLECommanderiOS.framework in Frameworks */,
+				F4EFC7CE1E43FC7E00D19263 /* zentri_ble_command.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +190,7 @@
 		806BD7221AE51A7B0017BC15 = {
 			isa = PBXGroup;
 			children = (
+				F4EFC7CD1E43FC7E00D19263 /* zentri_ble_command.framework */,
 				FF0F57201C056E1B008FAE5D /* Readme.md */,
 				806BD72D1AE51A7B0017BC15 /* demo */,
 				806BD7471AE51A7B0017BC15 /* demoTests */,
@@ -267,6 +284,7 @@
 				806BD7271AE51A7B0017BC15 /* Sources */,
 				806BD7281AE51A7B0017BC15 /* Frameworks */,
 				806BD7291AE51A7B0017BC15 /* Resources */,
+				F4EFC7D01E43FC7E00D19263 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -309,6 +327,7 @@
 					};
 					806BD72A1AE51A7B0017BC15 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = ALUV32PSY4;
 					};
 					806BD7431AE51A7B0017BC15 = {
 						CreatedOnToolsVersion = 6.2;
@@ -564,12 +583,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = ALUV32PSY4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/demo",
 				);
 				INFOPLIST_FILE = demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "";
@@ -584,12 +604,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = ALUV32PSY4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/demo",
 				);
 				INFOPLIST_FILE = demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "";

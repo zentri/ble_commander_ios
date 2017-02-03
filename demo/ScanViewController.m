@@ -33,7 +33,7 @@
 #import "ScanViewController.h"
 #import "DeviceDetailViewController.h"
 #import "UIViewController+ENPopUp.h"
-#import "BLECommanderiOS/BLECommanderiOS.h"
+#import "zentri_ble_command/zentri_ble_command.h"
 #import "TimedOutViewController.h"
 
 @interface ScanViewController () <DeviceDetailViewControllerDelegate, BLECommanderDelegate>
