@@ -124,15 +124,6 @@ typedef struct
     UInt32 length;
 } Header;
 
-//! Project version number for zentri_ble_command.
-FOUNDATION_EXPORT double zentri_ble_commandVersionNumber = 1;
-
-//! Project version string for zentri_ble_command.
-FOUNDATION_EXPORT const unsigned char zentri_ble_commandVersionString[] = "1.0.0.0";
-
-// In this header, you should import all the public headers of your framework using statements like #import <zentri_ble_command/PublicHeader.h>
-
-
 @protocol BLECommanderDelegate <NSObject>
 @required
 /**
